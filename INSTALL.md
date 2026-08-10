@@ -16,6 +16,24 @@ xhs-douyin-engagement-snapshot/
 
 ## 2. 安装到个人技能目录
 
+长期安装建议直接从 GitHub 仓库获取：
+
+```bash
+mkdir -p "$HOME/.codex/skills"
+git clone https://github.com/haoqiguai-dizao/xhs-douyin-engagement-snapshot.git \
+  "$HOME/.codex/skills/xhs-douyin-engagement-snapshot"
+```
+
+如果目录已经是该仓库的 Git checkout，更新时执行：
+
+```bash
+git -C "$HOME/.codex/skills/xhs-douyin-engagement-snapshot" pull --ff-only origin main
+```
+
+每次运行技能前仍会再次检查 GitHub `main`；本地 `git pull` 不是替代检查。
+
+如果使用压缩包安装：
+
 在另一台设备的终端执行：
 
 ```bash
@@ -23,7 +41,7 @@ mkdir -p "$HOME/.codex/skills"
 cp -R "xhs-douyin-engagement-snapshot" "$HOME/.codex/skills/"
 ```
 
-如果目录已存在，先备份或删除旧版本，再复制新版本，避免文件混用。
+如果目录已存在，先确认它对应上述 GitHub 仓库，再更新或备份旧版本，避免文件混用。
 
 ## 3. 项目数据目录
 
