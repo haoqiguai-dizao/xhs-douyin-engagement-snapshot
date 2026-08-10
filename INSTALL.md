@@ -33,6 +33,8 @@ git -C "$HOME/.codex/skills/xhs-douyin-engagement-snapshot" pull --ff-only origi
 
 每次运行技能前仍会再次检查 GitHub `main`；本地 `git pull` 不是替代检查。
 
+如果运行时日志出现 `No ChatGPT browser route is available`、`WebView handoff timeout`，或 debugger listener 被注销/释放，技能会保留已有标签页，先尝试重建 IAB 路由并执行一次无副作用语义健康检查；健康检查失败才会停止并报告需要重启内置浏览器宿主/Codex 桌面端。不会通过刷新页面、坐标点击或猜测深链伪装成修复。
+
 如果使用压缩包安装：
 
 在另一台设备的终端执行：
