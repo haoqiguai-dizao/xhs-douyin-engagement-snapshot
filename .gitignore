@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local run outputs and credentials must not be committed.
+数据/平台互动快照/
+.env
+.env.*
+!.env.example
