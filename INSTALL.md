@@ -12,6 +12,7 @@ xhs-douyin-engagement-snapshot/
   INSTALL.md
   scripts/merge_snapshot.py
   scripts/analyze_titles.py
+  scripts/normalize_metrics.py
 ```
 
 ## 2. 安装到个人技能目录
@@ -64,10 +65,10 @@ xhs-douyin-engagement-snapshot
 然后用类似以下请求试运行：
 
 ```text
-运行 xhs-douyin-engagement-snapshot，平台 xhs,douyin，列表 liked,favorited,favorited_videos，前 5 屏增量扫描，不做详情深读，不写飞书。
+运行 xhs-douyin-engagement-snapshot，平台 xhs,douyin，列表 liked,favorited,favorited_videos，前 3 屏增量扫描；理解小红书封面和抖音开场 3 秒，不做完整详情深读，不写飞书。
 ```
 
-运行结果的主报告必须先给“建议标题”：先由至少 2 条独立内容组成证据组，再使用反差、冲突、失败现场、数字、反常识或信息缺口形成可读标题，直接进入人工筛选、改写和 B 阶段点击测试。门店社群是候选筛选与正文落点，不要求每个标题重复“门店/社群/客户”。随后附适用场景、经营矛盾、业务落点、表达方案、原始证据和下一步验证。内容机制卡（角度、具体设定、标题句式、措辞动作和可迁移改写）放在证据部分，不接受只列关键词的主题聚类。标题规则辅助脚本不会替代详情/视频深读，也不会自动选 TOP。
+运行结果的主报告必须先给“建议标题”：每条证据先达到平台最低理解状态——小红书至少理解封面图与标题关系，抖音至少理解开场画面、屏幕文字及可见口播/字幕状态；只有列表标题的旧数据不能单独支撑候选。公开数据按同平台同指标百分位进入工作权重，不直接比较跨平台绝对值。随后附注意力机制、业务落点、平台原生证据、表现权重和下一步验证；辅助脚本不会自动选 TOP。
 
 ## 5. 配置另一台设备的飞书 Base
 
